@@ -18,7 +18,7 @@ namespace MultiValueDictionary
         where TClass : class, TInterface
         where TInterface : class
         {
-            services.AddSingleton<TInterface, TClass>();
+            services.AddScoped<TInterface, TClass>();
         }
 
         //function to resolve and return the object
